@@ -1,0 +1,82 @@
+/* @import "fonts.css"; */
+
+:root {
+  --border-style: solid;
+  --background-color: white;
+  --border-width: 3px;
+  --border-color: black;
+  --margin: 50px;
+  --gap: 20px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: var(--background-color); */
+}
+
+header {
+  height: 150px;
+  text-align: center;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+header > h1 {
+  font-size: 42px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 23px;
+  padding-left: 20px;
+}
+
+.title-image {
+  display: flex;
+  width: 300px;
+  height: 150px;
+}
+
+.card-section {
+  display: flex;
+  width: 80vw;
+  /* height: 300; */
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto; /* top & bottom set to 0 and left & right set to equal distance from edge*/
+  /* margin-bottom: auto; */
+}
+
+.question-card {
+  background-color: aquamarine;
+  flex-direction: column;
+  display: flex;
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  padding: var(--gap);
+  margin: var(--gap);
+  position: relative;
+}
+
+.answer-button {
+  position: absolute;
+}
+
+.bookmark-button {
+  position: absolute;
+}
+
+#answer {
+  display: none;
+}
+
+#show-answer-button:focus + #answer {
+  display: block;
+}
+
+.footer-link {
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+}
