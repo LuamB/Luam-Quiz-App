@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "friends";
-  src: url("/fonts/friends.ttf") format("truetype");
-}
+@import "global.css";
 
 /* Variables */
 
@@ -9,13 +6,13 @@
   --logo-red: #ff4747;
   --logo-blue: #007bb5;
   --logo-yellow: #ffd700;
-  --border-style: solid;
   --background-color: white;
-  --border-width: 3px;
   --border-color: black;
+  --border-style: solid;
+  --border-width: 3px;
 }
 
-/* Global styles */
+/* Body */
 
 body {
   font-family: friends;
@@ -28,7 +25,6 @@ header {
   background-color: var(--background-color);
   width: 57vw;
   height: 150px;
-  /* text-align: center; */
   display: flex;
   justify-content: center;
   border-style: var(--border-style);
@@ -52,9 +48,10 @@ header > h1 {
   height: 150px;
 }
 
-/* Main */
+/* Homepage */
 
 .card-section {
+  position: relative;
   width: 60vw;
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +104,7 @@ header > h1 {
   /* position: absolute; */
   background-color: var(--logo-yellow);
   font-family: friends;
+  border-radius: 4px;
   justify-content: center;
   padding: 10px;
   margin: 0 auto;
@@ -126,16 +124,31 @@ header > h1 {
 
 .card__tags > li {
   background-color: var(--logo-blue);
-  padding: 5px;
+  border-radius: 4px;
+  padding: 5px 7px;
 }
 
 /* .card__show-answer:focus + .question-card__answer {
   display: block;
 } */
 
+/* Homepage */
+
+.profile {
+}
+
 /* Footer */
 
+.footer {
+  border: var(--border-color) var(--border-style) var(--border-width);
+  border-color: var(--border-color);
+}
+
 .footer-nav {
+  background-color: var(--background-color);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: flex;
   justify-content: space-evenly;
 }
