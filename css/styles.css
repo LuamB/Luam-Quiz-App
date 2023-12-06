@@ -13,25 +13,29 @@
   --background-color: white;
   --border-width: 3px;
   --border-color: black;
-  --padding: 20px;
-  --margin: 20px;
 }
 
 /* Global styles */
 
 body {
   font-family: friends;
-  /* background-color: var(--background-color); */
+  background-color: var(--background-color);
 }
 
 /* Header */
 
 header {
+  background-color: var(--background-color);
+  width: 57vw;
   height: 150px;
-  text-align: center;
+  /* text-align: center; */
   display: flex;
-  align-content: center;
   justify-content: center;
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  border-radius: 10px;
+  margin: 20px auto;
 }
 
 header > h1 {
@@ -39,7 +43,7 @@ header > h1 {
   font-weight: bold;
   text-align: center;
   padding-top: 23px;
-  padding-left: var(--padding);
+  padding-left: 20px;
 }
 
 .title-image {
@@ -51,26 +55,24 @@ header > h1 {
 /* Main */
 
 .card-section {
-  display: flex;
   width: 60vw;
-  /* height: 300; */
-  flex-direction: column;
+  display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   margin: 0 auto; /* top & bottom set to 0 and left & right set to equal distance from edge*/
-  /* margin-bottom: auto; */
 }
 
 .card {
-  background-color: var(--logo-red);
-  flex-direction: column;
+  background-color: lightsalmon;
   display: flex;
+  flex-direction: column;
   border-style: var(--border-style);
   border-color: var(--border-color);
   border-width: var(--border-width);
   border-radius: 10px;
   padding: 30px;
-  margin: var(--margin);
+  margin: 20px;
   position: relative;
 }
 
@@ -96,7 +98,7 @@ header > h1 {
 .card__question {
   height: auto;
   width: auto;
-  padding: var(--padding);
+  padding: 20px;
 }
 
 .card__button {
@@ -104,7 +106,7 @@ header > h1 {
   background-color: var(--logo-yellow);
   font-family: friends;
   justify-content: center;
-  padding: var(--padding);
+  padding: 10px;
   margin: 0 auto;
 }
 
@@ -122,8 +124,11 @@ header > h1 {
 }
 
 .card_tags > li {
-  margin: var(--margin);
-  padding: var(--padding);
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 30px;
+  padding: 30px;
 }
 
 /* .card__show-answer:focus + .question-card__answer {
@@ -141,5 +146,5 @@ header > h1 {
   width: 50px;
   height: 50px;
   margin: 20px;
-  padding: var(--padding);
+  padding: 20px;
 }
