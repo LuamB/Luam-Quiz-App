@@ -2,5 +2,5 @@
 
 @font-face {
   font-family: "friends";
-  src: url("/fonts/friends.ttf") format("truetype");
+  src: url("./fonts/friends.ttf") format("truetype");
 }
