@@ -1,0 +1,6 @@
+/* Import Friends font */
+
+@font-face {
+  font-family: "friends";
+  src: url("/fonts/friends.ttf") format("truetype");
+}
