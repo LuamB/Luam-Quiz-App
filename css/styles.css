@@ -79,6 +79,8 @@ header > h1 {
 .card__bookmark {
   /* display: flex; */
   /* flex-flow: wrap; */
+  border: none;
+  background: none;
   position: absolute;
   width: 30px;
   height: 50px;
@@ -87,7 +89,7 @@ header > h1 {
 }
 
 .card__bookmark img {
-  /* pointer-events: stroke; */
+  pointer-events: stroke;
   position: absolute;
   width: 50px;
   height: 70px;
@@ -115,20 +117,16 @@ header > h1 {
 }
 
 .card__tags {
-  /* position: absolute; */
-  background-color: var(--logo-blue);
   list-style-type: none;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
+  gap: 10px;
+  padding: 10px;
 }
 
-.card_tags > li {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  margin: 30px;
-  padding: 30px;
+.card__tags > li {
+  background-color: var(--logo-blue);
+  padding: 5px;
 }
 
 /* .card__show-answer:focus + .question-card__answer {
