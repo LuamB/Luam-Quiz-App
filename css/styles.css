@@ -14,8 +14,11 @@
 
 /* Body */
 
-body {
+* {
   font-family: friends;
+}
+
+body {
   background-color: var(--background-color);
 }
 
@@ -103,7 +106,6 @@ header > h1 {
 .card__button {
   /* position: absolute; */
   background-color: var(--logo-yellow);
-  font-family: friends;
   border-radius: 4px;
   justify-content: center;
   padding: 10px;
