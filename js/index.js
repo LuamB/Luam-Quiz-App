@@ -8,7 +8,7 @@ const buttonBookmark = document.querySelector('[data-js="button-bookmark"]');
 // Toogle bookmark button
 let index = 0;
 const bookmarkImg = document.getElementById("bookmark-image");
-const images = ["./img/bookmark_filled.png", "./img/bookmark.png"];
+const images = ["./img/bookmark.png", "./img/bookmark_filled.png"];
 
 buttonBookmark.addEventListener("click", () => {
   index = 1 - index; // Toggles between 0=filled and 1=not filled
