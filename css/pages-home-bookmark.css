@@ -1,4 +1,4 @@
-/* Homepage */
+/* Homepage & Favorites page */
 
 .card-section {
   position: relative;
@@ -7,60 +7,61 @@
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
-  margin: 0 auto; /* top & bottom set to 0 and left & right set to equal distance from edge*/
+  margin: 0 auto 70px auto; /* top & bottom set to 0 and left & right set to equal distance from edge*/
 }
 
 .card {
-  background-color: lightsalmon;
   display: flex;
   flex-direction: column;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
   border-style: var(--border-style);
   border-color: var(--border-color);
   border-width: var(--border-width);
-  border-radius: 10px;
-  padding: 10px;
-  margin: 10px;
-  position: relative;
+  background-color: var(--background-color);
 }
 
 .card__bookmark {
-  /* display: flex; */
-  /* flex-flow: wrap; */
+  width: 35px;
+  height: 55px;
+  margin: 5px;
   border: none;
   background: none;
-  position: absolute;
-  margin: 5px;
-  width: 50px;
-  height: 70px;
   top: -15px;
   right: 15px;
   overflow: hidden;
+  position: absolute;
 }
 
 .card__bookmark img {
+  width: 35px;
+  height: 55px;
   pointer-events: stroke;
-  width: 50px;
-  height: 70px;
 }
 
 .card__question {
-  height: auto;
+  font-size: 18px;
   width: auto;
+  height: auto;
   padding: 10px;
-  margin-top: 70px;
+  margin-top: 50px;
 }
 
 .card__button {
-  /* position: absolute; */
-  background-color: var(--logo-yellow);
-  border-radius: 4px;
+  position: relative;
   justify-content: center;
+  background-color: var(--logo-blue);
+  border-radius: 5px;
   padding: 10px;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .card__answer {
+  position: relative;
   padding: 10px;
+  justify-content: center;
 }
 
 .hidden {
@@ -68,9 +69,9 @@
 }
 
 .card__tags {
-  list-style-type: none;
   display: flex;
   justify-content: flex-start;
+  list-style-type: none;
   gap: 5px;
   padding: 5px;
   padding-bottom: 0px;
@@ -78,7 +79,7 @@
 }
 
 .card__tags > li {
-  background-color: var(--logo-blue);
+  background-color: var(--logo-yellow);
   border-radius: 4px;
   padding: 5px 7px;
   margin-bottom: 0px;

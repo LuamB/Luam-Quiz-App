@@ -1,60 +1,57 @@
-/* Import Friends font */
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: friends;
+  box-sizing: border-box;
+}
 
+/* Import Friends font */
 @font-face {
   font-family: "friends";
   src: url("../fonts/friends.ttf") format("truetype");
 }
 
 /* Variables */
-
 :root {
-  --logo-red: #ff4747;
-  --logo-blue: #007bb5;
+  /* --logo-red: #ff4747; */
+  /* --logo-blue: #007bb5; */
+  --logo-blue: #4ea8d1;
   --logo-yellow: #ffd700;
-  --active-color: lightblue;
+  --primary-color: rgb(222, 133, 98);
+  --active-color: lightgray;
   --background-color: white;
   --border-color: black;
   --border-style: solid;
-  --border-width: 3px;
+  --border-width: 2px;
 }
 
 /* Body */
-
-* {
-  font-family: friends;
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  background-color: var(--background-color);
+  background-color: var(--primary-color);
 }
 
 /* Header */
-
 header {
-  gap: 10px;
   width: 57vw;
-  margin: 20px auto;
+  margin: 10px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
-  border-style: var(--border-style);
-  border-color: var(--border-color);
-  border-width: var(--border-width);
   background-color: var(--background-color);
+  border: var(--border-width) var(--border-style) var(--border-color);
 }
 
-header > h1 {
-  font-size: 42px;
-  font-weight: bold;
+header > p {
+  font-size: 48px;
+  margin: 0px 10px 5px 15px;
   text-align: center;
 }
 
 .title-image {
-  max-height: 80px;
+  max-height: 70px;
   max-width: 280px;
   border-radius: 10px;
   object-fit: cover;
@@ -62,28 +59,50 @@ header > h1 {
 }
 
 /* Footer */
-
 .footer {
-  border: var(--border-color) var(--border-style) var(--border-width);
-  border-color: var(--border-color);
-}
-
-.footer-nav {
-  background-color: var(--background-color);
   position: fixed;
   bottom: 0;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--background-color);
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+  /* box-shadow: 0px 10px 13px 10px black; */
 }
+
+.footer__icon {
+  height: 50px;
+  padding: 10px;
+  overflow: hidden;
+  object-fit: scale-down;
+}
+
+.footer_link {
+}
+
+/* .footer__link {
+  flex-grow: 1;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+} */
+
+.footer__link.footer__link--active {
+  background-color: var(--active-color);
+}
+
+/* .footer-nav {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-evenly;
+  background-color: var(--background-color);
+  border-top: var(--border-width) var(--border-style) var(--border-color);
+} 
 
 .footer__link {
   width: 50px;
-  height: 50px;
-  margin: 20px;
-  padding: 20px;
-}
-
-/* .footer__link.footer__link--active {
-  background-color: var(--active-color);
+  padding: 10px;
 } */
