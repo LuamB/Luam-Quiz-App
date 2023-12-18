@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/index.js" defer></script>
     <title>Homepage</title>
   </head>
   <body>
@@ -20,16 +21,21 @@
     <main class="card-section">
       <!-- Question 1 -->
       <article class="card">
-        <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
-          <!-- <img src="./img/bookmark_filled.png" alt="Bookmarked" /> -->
+        <button class="card__bookmark" data-js="button-bookmark">
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h2 class="card__question">
           What is the name of the coffee shop where the Friends gang frequently
           hangs out?
         </h2>
-        <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Central Perk</p>
+        <button class="card__button" alt="Shows answer" data-js="button-answer">
+          Show Answer
+        </button>
+        <p class="card__answer" hidden>Central Perk</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#cafe</li>
@@ -39,14 +45,18 @@
       <!-- Question 2 -->
       <article class="card">
         <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h3 class="card__question">
           What is the surname of Ross and Monica, two of the main characters in
           Friends?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Geller</p>
+        <p class="card__answer" hidden>Geller</p>
         <ul class="card__tags">
           <li>#love</li>
           <li>#monica</li>
@@ -56,15 +66,18 @@
       <!-- Question 3 -->
       <article class="card">
         <button class="card__bookmark">
-          <!-- <img src="./img/bookmark.png" alt="Not bookmarked" /> -->
-          <img src="./img/bookmark_filled.png" alt="Bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark_filled.png"
+            alt="Bookmarked"
+          />
         </button>
         <h3 class="card__question">
           Which character famously yelled "We were on a break!" during a
           relationship dispute?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Ross Geller</p>
+        <p class="card__answer" hidden>Ross Geller</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#monica</li>
@@ -74,15 +87,18 @@
       <!-- Question 4 -->
       <article class="card">
         <button class="card__bookmark">
-          <!-- <img src="./img/bookmark.png" alt="Not bookmarked" /> -->
-          <img src="./img/bookmark_filled.png" alt="Bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark_filled.png"
+            alt="Bookmarked"
+          />
         </button>
         <h3 class="card__question">
           What is the name of Phoebe's quirky, often nonsensical song about a
           smelly cat?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">"Smelly Cat"</p>
+        <p class="card__answer" hidden>"Smelly Cat"</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#phoebe</li>
@@ -92,11 +108,15 @@
       <!-- Question 5 -->
       <article class="card">
         <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h3 class="card__question">What does Joey never share?</h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Food</p>
+        <p class="card__answer" hidden>Food</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#joey</li>
@@ -106,12 +126,15 @@
       <!-- Question 6 -->
       <article class="card">
         <button class="card__bookmark">
-          <!-- <img src="./img/bookmark.png" alt="Not bookmarked" /> -->
-          <img src="./img/bookmark_filled.png" alt="Bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark_filled.png"
+            alt="Bookmarked"
+          />
         </button>
         <h3 class="card__question">What is Chandler's last name?</h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Bing</p>
+        <p class="card__answer" hidden>Bing</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#chandler</li>
@@ -120,13 +143,17 @@
       <!-- Question 7 -->
       <article class="card">
         <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h3 class="card__question">
           Which character is a paleontologist by profession?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Ross Geller</p>
+        <p class="card__answer" hidden>Ross Geller</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#ross</li>
@@ -134,14 +161,17 @@
         </ul>
       </article>
       <!-- Question 8 -->
-      <!-- Question 8 -->
       <article class="card">
         <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h3 class="card__question">What is the name of Rachel's daughter?</h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Emma</p>
+        <p class="card__answer" hidden>Emma</p>
         <ul class="card__tags">
           <li>#love</li>
           <li>#rachel</li>
@@ -151,14 +181,17 @@
       <!-- Question 9 -->
       <article class="card">
         <button class="card__bookmark">
-          <!-- <img src="./img/bookmark.png" alt="Not bookmarked" /> -->
-          <img src="./img/bookmark_filled.png" alt="Bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark_filled.png"
+            alt="Bookmarked"
+          />
         </button>
         <h3 class="card__question">
           Which character famously says "How you doin'?" as a pick-up line?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Joey Tribbiani</p>
+        <p class="card__answer" hidden>Joey Tribbiani</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#love</li>
@@ -167,13 +200,17 @@
       <!-- Question 10 -->
       <article class="card">
         <button class="card__bookmark">
-          <img src="./img/bookmark.png" alt="Not bookmarked" />
+          <img
+            id="bookmark-image"
+            src="./img/bookmark.png"
+            alt="Not bookmarked"
+          />
         </button>
         <h3 class="card__question">
           What is the profession of Chandler's wife, Monica?
         </h3>
         <button class="card__button" alt="Shows answer">Show Answer</button>
-        <p class="card__answer">Joey Tribbiani</p>
+        <p class="card__answer" hidden>Joey Tribbiani</p>
         <ul class="card__tags">
           <li>#friends</li>
           <li>#work</li>
@@ -185,18 +222,18 @@
       <nav class="footer-nav">
         <a href="#"
           ><img
-            class="footer-link"
+            class="footer__link"
             src="./img/home_filled.png"
             alt="House icon"
         /></a>
         <a href="bookmark.html"
           ><img
-            class="footer-link"
+            class="footer__link"
             src="./img/bookmark.png"
             alt="Bookmark icon"
         /></a>
         <a href="./profile.html"
-          ><img class="footer-link" src="./img/profile.png" alt="Profile icon"
+          ><img class="footer__link" src="./img/profile.png" alt="Profile icon"
         /></a>
       </nav>
     </footer>
