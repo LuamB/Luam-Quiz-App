@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
     <script src="./js/form.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <title>Form</title>
   </head>
   <body>
@@ -19,7 +20,7 @@
     </header>
     <!-- Main -->
     <main class="new-card-form">
-      <form action="submit" class="new-card-form">
+      <form action="submit" class="new-card-form" data-js="form">
         <legend for="new-card__question" class="form-legend">
           Your question:
         </legend>
@@ -29,8 +30,13 @@
           id="new-card__question"
           cols="30"
           rows="10"
+          maxlength="150"
+          required
         >
         </textarea>
+        <div id="charCountQuestion">
+          <p>Characters left: 150</p>
+        </div>
 
         <legend for="new-card__answer" class="form-legend">Your answer:</legend>
         <textarea
@@ -39,8 +45,13 @@
           id="new-card__answer"
           cols="30"
           rows="10"
+          maxlength="150"
+          required
         >
         </textarea>
+        <div id="charCountAnswer">
+          <p>Characters left: 150</p>
+        </div>
 
         <legend class="form-legend">Tags:</legend>
         <input
@@ -49,13 +60,10 @@
           name="new-card__tags"
           id="new-card__tags"
           placeholder="Enter tags separated by commas"
+          required
         />
 
-        <button
-          class="new-card__button"
-          type="submit"
-          aria-label="Submit button"
-        >
+        <button class="submit-button" type="submit" aria-label="Submit button">
           Submit
         </button>
       </form>

@@ -6,7 +6,7 @@ const buttonBookmark = document.querySelector(".card__bookmark");
 // Toogle bookmark button
 let index = 0;
 // const bookmarkImg = document.getElementById("bookmark-image");
-const bookmarkImg = document.querySelector(".bookmark-image");
+const bookmarkImg = document.querySelector("#bookmark-image");
 const images = ["./img/bookmark.png", "./img/bookmark_filled.png"];
 
 buttonBookmark.addEventListener("click", () => {

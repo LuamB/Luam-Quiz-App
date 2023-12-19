@@ -33,7 +33,7 @@
   position: absolute;
 }
 
-.card__bookmark img {
+#bookmark-image {
   width: 35px;
   height: 55px;
   pointer-events: stroke;
@@ -71,7 +71,7 @@
   margin-bottom: 5px;
 }
 
-.card__tags > li {
+.tags {
   background-color: var(--logo-yellow);
   border-radius: 4px;
   padding: 5px 7px;
