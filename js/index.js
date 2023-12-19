@@ -1,10 +1,10 @@
 console.clear();
 
-// const buttonBookmark = document.querySelector('[data-js="button-bookmark"]');
+// Toogle bookmark button
 const buttonBookmark = document.querySelector(".card__bookmark");
 
-// Toogle bookmark button
 let index = 0;
+
 // const bookmarkImg = document.getElementById("bookmark-image");
 const bookmarkImg = document.querySelector("#bookmark-image");
 const images = ["./img/bookmark.png", "./img/bookmark_filled.png"];
