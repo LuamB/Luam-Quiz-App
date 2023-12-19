@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
-    <script src="./js/index.js" defer></script>
+    <script src="./js/form.js" defer></script>
     <title>Form</title>
   </head>
   <body>
@@ -15,41 +15,49 @@
         src="https://1000logos.net/wp-content/uploads/2020/12/Friends-Logo.jpg"
         alt="Friends logo"
       />
-      <h1>Quiz</h1>
+      <p>Quiz</p>
     </header>
-    <main>
-      <form action="submit" class="card-section">
-        <legend for="card__question">Your question:</legend>
+    <!-- Main -->
+    <main class="new-card-form">
+      <form action="submit" class="new-card-form">
+        <legend for="new-card__question" class="form-legend">
+          Your question:
+        </legend>
         <textarea
-          class="card"
-          name="card__question"
-          id="card__question"
+          class="new-card"
+          name="new-card__question"
+          id="new-card__question"
           cols="30"
           rows="10"
         >
         </textarea>
 
-        <legend for="card__answer">Your answer:</legend>
+        <legend for="new-card__answer" class="form-legend">Your answer:</legend>
         <textarea
-          class="card"
-          name="card__answer"
-          id="card__answer"
+          class="new-card"
+          name="new-card__answer"
+          id="new-card__answer"
           cols="30"
           rows="10"
         >
         </textarea>
 
-        <legend for="card__answer">Tags:</legend>
-        <textarea
-          class="card"
-          name="card__answer"
-          id="card__answer"
-          cols="30"
-          rows="10"
-        >
-        </textarea>
+        <legend class="form-legend">Tags:</legend>
+        <input
+          type="text"
+          class="new-card"
+          name="new-card__tags"
+          id="new-card__tags"
+          placeholder="Enter tags separated by commas"
+        />
 
-        <button type="submit" aria-label="Submit button">Submit</button>
+        <button
+          class="new-card__button"
+          type="submit"
+          aria-label="Submit button"
+        >
+          Submit
+        </button>
       </form>
     </main>
     <!-- Footer -->
@@ -57,11 +65,11 @@
       <a href="./index.html" class="footer__link"
         ><img class="footer__icon" src="./img/home.png" alt="House icon"
       /></a>
-      <a href="./bookmark.html" class="footer__link"
+      <a href="./bookmarks.html" class="footer__link"
         ><img class="footer__icon" src="./img/bookmark.png" alt="Bookmark icon"
       /></a>
       <a href="./form.html" class="footer__link footer__link--active"
-        ><img class="footer__icon" src="./img/plus-filled.png" alt="Plus icon"
+        ><img class="footer__icon" src="./img/plus_filled.png" alt="Plus icon"
       /></a>
       <a href="./profile.html" class="footer__link"
         ><img class="footer__icon" src="./img/profile.png" alt="Profile icon"

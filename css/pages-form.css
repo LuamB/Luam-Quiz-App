@@ -1,0 +1,37 @@
+/* Form-specific styles */
+.new-card-form {
+  position: relative;
+  width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto 70px auto; /* top & bottom set to 0 and left & right set to equal distance from edge*/
+}
+
+.new-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--background-color);
+  border: var(--border-width) var(--border-style) var(--border-color);
+}
+
+.form-legend {
+  font-size: 1.5em; /* Adjust font size as needed */
+  margin-bottom: 5px;
+  display: block;
+}
+
+.new-card__button {
+  padding: 10px;
+  margin: 10px auto;
+  font-size: larger;
+  border-radius: 5px;
+  position: relative;
+  justify-content: center;
+  background-color: var(--logo-blue);
+}

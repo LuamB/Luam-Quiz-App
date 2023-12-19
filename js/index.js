@@ -1,13 +1,12 @@
 console.clear();
 
-const buttonBookmark = document.querySelector('[data-js="button-bookmark"]');
-// const buttonAnswer = document.querySelector('[data-js="button-answer"]');
-// const answer = document.querySelector(".card__answer");
-// answer.classList.add("hidden");
+// const buttonBookmark = document.querySelector('[data-js="button-bookmark"]');
+const buttonBookmark = document.querySelector(".card__bookmark");
 
 // Toogle bookmark button
 let index = 0;
-const bookmarkImg = document.getElementById("bookmark-image");
+// const bookmarkImg = document.getElementById("bookmark-image");
+const bookmarkImg = document.querySelector(".bookmark-image");
 const images = ["./img/bookmark.png", "./img/bookmark_filled.png"];
 
 buttonBookmark.addEventListener("click", () => {

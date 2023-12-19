@@ -17,10 +17,8 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  border-style: var(--border-style);
-  border-color: var(--border-color);
-  border-width: var(--border-width);
   background-color: var(--background-color);
+  border: var(--border-width) var(--border-style) var(--border-color);
 }
 
 .card__bookmark {
@@ -50,22 +48,17 @@
 }
 
 .card__button {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
   position: relative;
   justify-content: center;
   background-color: var(--logo-blue);
-  border-radius: 5px;
-  padding: 10px;
-  margin: 10px auto;
 }
 
 .card__answer {
-  position: relative;
   padding: 10px;
-  justify-content: center;
-}
-
-.hidden {
-  display: none;
+  margin: 0 auto;
 }
 
 .card__tags {
@@ -73,8 +66,8 @@
   justify-content: flex-start;
   list-style-type: none;
   gap: 5px;
-  padding: 5px;
-  padding-bottom: 0px;
+  padding: 5px 5px 0px 5px;
+  /* padding-bottom: 0px; */
   margin-bottom: 5px;
 }
 
