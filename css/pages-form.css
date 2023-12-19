@@ -26,7 +26,7 @@
   display: block;
 }
 
-.new-card__button {
+.submit-button {
   padding: 10px;
   margin: 10px auto;
   font-size: larger;
@@ -34,4 +34,61 @@
   position: relative;
   justify-content: center;
   background-color: var(--logo-blue);
+}
+
+.new-card__bookmark {
+  width: 35px;
+  height: 55px;
+  margin: 5px;
+  border: none;
+  background: none;
+  top: -15px;
+  right: 15px;
+  overflow: hidden;
+  position: absolute;
+}
+
+#bookmark-image {
+  width: 35px;
+  height: 55px;
+  pointer-events: stroke;
+}
+
+.new-card__question {
+  font-size: 18px;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.new-card__button {
+  padding: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+  position: relative;
+  justify-content: center;
+  background-color: var(--logo-blue);
+}
+
+.new-card__answer {
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.new-card__tags {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 5px;
+  padding: 5px 5px 0px 5px;
+  /* padding-bottom: 0px; */
+  margin-bottom: 5px;
+}
+
+.new-tags {
+  background-color: var(--logo-yellow);
+  border-radius: 4px;
+  padding: 5px 7px;
+  margin-bottom: 0px;
 }

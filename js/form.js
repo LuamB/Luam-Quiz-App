@@ -68,6 +68,20 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// Update character counter for question field
+questionText.addEventListener("input", () => {
+  const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
+  const charLeft = maxLengthQuestion - questionText.value.length;
+  charCountQuestion.textContent = `${remainingChars} characters left`;
+});
+
+// Update character counter for answer field
+answerText.addEventListener("input", () => {
+  const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
+  const charLeft = maxLengthAnswer - answerText.value.length;
+  charCountAnswer.textContent = `${remainingChars} characters left`;
+});
+
 // Clear the input fields (optional)
 
 // // Create a new card element
@@ -92,20 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Append to main
 // form.insertAdjacentElement("afterend", card);
-
-// Update character counter for question field
-questionText.addEventListener("input", () => {
-  const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
-  const charLeft = maxLengthQuestion - questionText.value.length;
-  charCountQuestion.textContent = `${remainingChars} characters left`;
-});
-
-// Update character counter for answer field
-answerText.addEventListener("input", () => {
-  const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
-  const charLeft = maxLengthAnswer - answerText.value.length;
-  charCountAnswer.textContent = `${remainingChars} characters left`;
-});
 
 // function createCardElement(question, answer, tag) {
 //   const card = document.createElement("section");
