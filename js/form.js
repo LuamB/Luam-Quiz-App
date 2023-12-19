@@ -2,12 +2,26 @@ console.clear();
 
 document.addEventListener("DOMContentLoaded", function () {
   const main = document.querySelector(".new-card-form");
-  main.classList.add("new-card-form");
+  // main.classList.add("new-card-form");
   const form = document.querySelector('[data-js="form"]');
   const questionText = document.querySelector("#new-card__question");
   const answerText = document.querySelector("#new-card__answer");
   const charCountQuestion = document.querySelector("#charCountQuestion");
   const charCountAnswer = document.querySelector("#charCountAnswer");
+
+  // Update character counter for question field
+  questionText.addEventListener("input", () => {
+    const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
+    const charLeft = maxLengthQuestion - questionText.value.length;
+    charCountQuestion.textContent = `${charLeft} characters left`;
+  });
+
+  // Update character counter for answer field
+  answerText.addEventListener("input", () => {
+    const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
+    const charLeft = maxLengthAnswer - answerText.value.length;
+    charCountAnswer.textContent = `${charLeft} characters left`;
+  });
 
   // Events at form submission
   form.addEventListener("submit", (event) => {
@@ -16,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Get new question, answer and tags
     const newQuestion = questionText.value.trim();
     const newAnswer = answerText.value.trim();
-    const newTags = document.querySelector("new-card").value.trim();
+    const newTags = document.querySelector("#new-card__tags").value.trim();
 
     // Split the string into an array of words using commas as the delimiter
     const tagsArray = newTags.split(",");
@@ -35,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Create a new li element for each tag
       const tagListItem = document.createElement("li");
       tagListItem.classList.add("new-tags");
-      tagListItem.textContent = trimmedTag;
+      tagListItem.textContent = `#${trimmedTag}`;
 
       // Append the li element to the ul
       tagsList.appendChild(tagListItem);
@@ -45,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const newCard = document.createElement("article");
     newCard.classList.add("new-card");
     newCard.innerHTML = `
-        <button class="new-card__bookmark">
+        <button class="card__bookmark">
           <img
             id="bookmark-image"
             src="./img/bookmark.png"
@@ -62,24 +76,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Append the new card to the container
     main.appendChild(newCard);
+    // main.innerHTML += newCard;
 
     // Reset form fields
     form.reset();
   });
-});
-
-// Update character counter for question field
-questionText.addEventListener("input", () => {
-  const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
-  const charLeft = maxLengthQuestion - questionText.value.length;
-  charCountQuestion.textContent = `${remainingChars} characters left`;
-});
-
-// Update character counter for answer field
-answerText.addEventListener("input", () => {
-  const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
-  const charLeft = maxLengthAnswer - answerText.value.length;
-  charCountAnswer.textContent = `${remainingChars} characters left`;
 });
 
 // Clear the input fields (optional)
