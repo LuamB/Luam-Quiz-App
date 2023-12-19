@@ -36,7 +36,7 @@
   background-color: var(--logo-blue);
 }
 
-.card__bookmark {
+.new-card__bookmark {
   width: 35px;
   height: 55px;
   margin: 5px;
@@ -48,7 +48,7 @@
   position: absolute;
 }
 
-#bookmark-image {
+#new-bookmark-image {
   width: 35px;
   height: 55px;
   pointer-events: stroke;
