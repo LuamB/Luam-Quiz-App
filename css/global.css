@@ -78,16 +78,6 @@ header > p {
   object-fit: scale-down;
 }
 
-.footer_link {
-}
-
-/* .footer__link {
-  flex-grow: 1;
-  display: flex; 
-  justify-content: center;
-  align-items: center;
-} */
-
 .footer__link.footer__link--active {
   background-color: var(--active-color);
 }
