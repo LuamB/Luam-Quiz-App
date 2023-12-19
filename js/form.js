@@ -9,20 +9,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const charCountQuestion = document.querySelector("#charCountQuestion");
   const charCountAnswer = document.querySelector("#charCountAnswer");
 
-  // Update character counter for question field
-  questionText.addEventListener("input", () => {
-    const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
-    const charLeft = maxLengthQuestion - questionText.value.length;
-    charCountQuestion.textContent = `${remainingChars} characters left`;
-  });
-
-  // Update character counter for answer field
-  answerText.addEventListener("input", () => {
-    const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
-    const charLeft = maxLengthAnswer - answerText.value.length;
-    charCountAnswer.textContent = `${remainingChars} characters left`;
-  });
-
   // Events at form submission
   form.addEventListener("submit", (event) => {
     event.preventDefault(); // Prevent default form submission
@@ -80,6 +66,20 @@ document.addEventListener("DOMContentLoaded", function () {
     // Reset form fields
     form.reset();
   });
+});
+
+// Update character counter for question field
+questionText.addEventListener("input", () => {
+  const maxLengthQuestion = parseInt(questionText.getAttribute("maxlength"));
+  const charLeft = maxLengthQuestion - questionText.value.length;
+  charCountQuestion.textContent = `${remainingChars} characters left`;
+});
+
+// Update character counter for answer field
+answerText.addEventListener("input", () => {
+  const maxLengthAnswer = parseInt(answerText.getAttribute("maxlength"));
+  const charLeft = maxLengthAnswer - answerText.value.length;
+  charCountAnswer.textContent = `${remainingChars} characters left`;
 });
 
 // Clear the input fields (optional)
